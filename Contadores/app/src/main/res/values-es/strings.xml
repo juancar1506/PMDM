@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contadores</string>
+    <string name="texto">Reiniciar</string>
+    <string name="global">0</string>
+    <string name="plusOne">+1</string>
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/resetGlobal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/texto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/reset_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toEndOf="@+id/contadorGlobal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <Button
+        android:id="@+id/plusOne_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/plusOne"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/plusOne_4"
+        app:layout_constraintEnd_toStartOf="@+id/reset_1"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/contador_1" />
+
+    <Button
+        android:id="@+id/reset_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/texto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/reset_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/plusOne_1" />
+
+    <Button
+        android:id="@+id/plusOne_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/plusOne"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/plusOne_3"
+        app:layout_constraintEnd_toStartOf="@+id/reset_1"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/contador_1" />
+
+    <Button
+        android:id="@+id/reset_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/texto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/reset_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/plusOne_1" />
+
+    <TextView
+        android:id="@+id/contadorGlobal"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/global"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/plusOne_1"
+        app:layout_constraintEnd_toStartOf="@+id/reset_1"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <Button
+        android:id="@+id/plusOne_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/plusOne"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reset_1"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/contador_1" />
+
+    <TextView
+        android:id="@+id/contador_2"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/global"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contador_3"
+        app:layout_constraintEnd_toStartOf="@+id/plusOne_1"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contador_4"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="144dp"
+        android:text="@string/global"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plusOne_1"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contador_1"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/global"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contador_2"
+        app:layout_constraintEnd_toStartOf="@+id/plusOne_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/contador_3"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/global"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/contador_4"
+        app:layout_constraintEnd_toStartOf="@+id/plusOne_1"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/texto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toEndOf="@+id/plusOne_1" />
+
+    <Button
+        android:id="@+id/reset_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/texto"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/reset_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/plusOne_1" />
+
+    <Button
+        android:id="@+id/plusOne_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/plusOne"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/plusOne_2"
+        app:layout_constraintEnd_toStartOf="@+id/reset_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/contador_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
