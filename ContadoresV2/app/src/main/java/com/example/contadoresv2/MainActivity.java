@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         miFila3 = new FilaContador (findViewById(R.id.contador_3), findViewById(R.id.plusOne_3), findViewById(R.id.reset_3));
 
         miFila4 = new FilaContador (findViewById(R.id.contador_4), findViewById(R.id.plusOne_4), findViewById(R.id.reset_4));
+
         filas = Arrays.asList(miFila,miFila2,miFila3,miFila4);
         for (FilaContador fila:filas) {
             fila.start();
@@ -49,11 +50,9 @@ public class MainActivity extends AppCompatActivity {
         resetGlobal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                miFila.resetCont();
-                miFila2.resetCont();
-                miFila3.resetCont();
-                miFila4.resetCont();
-
+                for (FilaContador fila:filas) {
+                    fila.resetCont();
+                }
             }
         });
 
