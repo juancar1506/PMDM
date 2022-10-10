@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLayout">
+
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="187dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:hint="Escriba su nombre"
+        android:inputType="text"
+        android:padding="4pt"
+        android:textSize="40px"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="46dp"
+        android:layout_weight="4"
+        android:labelFor="@id/nombre"
+        android:text="Nombre:"
+        android:textSize="40px"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"></TextView>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="183dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:hint="Escriba su email"
+        android:inputType="textEmailAddress"
+        android:padding="4pt"
+        android:textSize="40px"
+        app:layout_constraintBottom_toTopOf="@+id/telefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="44dp"
+
+        android:layout_weight="4"
+        android:labelFor="@id/email"
+        android:text="Direccion de correo:"
+        android:textSize="40px"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/email"></TextView>
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="48dp"
+        android:hint="Escriba su telefono"
+        android:inputType="phone"
+        android:padding="4pt"
+        android:textSize="40px"
+        app:layout_constraintBottom_toTopOf="@+id/resultNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginBottom="56dp"
+
+        android:layout_weight="4"
+        android:labelFor="@id/telefono"
+        android:text="Telefono:"
+        android:textSize="40px"
+        app:layout_constraintBottom_toTopOf="@+id/resultNombre"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/resultNombre"
+        android:layout_width="359dp"
+        android:layout_height="302dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
