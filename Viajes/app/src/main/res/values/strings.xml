@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Viajes</string>
+    <string-array name="LugaresIda">
+        <item>Madrid</item>
+        <item>Salamanca</item>
+        <item>Bilbao</item>
+    </string-array>
+    <string name="fecha">DD/MM/YYYY</string>
+</resources>
